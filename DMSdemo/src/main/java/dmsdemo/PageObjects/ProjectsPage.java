@@ -112,22 +112,22 @@ public class ProjectsPage{
 	
 	public void projectMenu() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 
 		projetsMenu.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	public void createProjectIcon() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		createProjIcon.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	
 	}
 	public void createProject(String pname,String ptype) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		projectName.sendKeys(pname);
 		Select sel=new Select(projectType);
@@ -135,14 +135,13 @@ public class ProjectsPage{
 	}
 	public void  save() throws InterruptedException
 	{
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		savebtn.click();
 	}
 	public boolean selProject(String pname) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
-		Thread.sleep(1000);
 		for(int i=0;i<projectsList.size();i++)
 		{
 			String depname=projectsList.get(i).getText();
@@ -156,7 +155,7 @@ public class ProjectsPage{
 	}
 	public void addProjRole(String prole) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		createProjRoleIcon.click();
 		Thread.sleep(2000);
@@ -165,7 +164,7 @@ public class ProjectsPage{
 	}
 	public boolean verifyProjectRole(String prole) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		for(int i=0;i<projroles.size();i++)
 		{
 			String depname=projroles.get(i).getText();
@@ -188,7 +187,7 @@ public class ProjectsPage{
 	}
 	public void chooseUserDropdown() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		chooseuser.click();
 	}
@@ -209,7 +208,7 @@ public class ProjectsPage{
 	}
 	public boolean verifyProjectUsers(String username) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		for(int i=0;i<projusers.size();i++)
 		{
@@ -226,27 +225,27 @@ public class ProjectsPage{
 	
 	public void createFolder() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		createFolderIcon.click();
 		Thread.sleep(2000);
 	}
 	public void addFolder(String foldername) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		folderName.sendKeys(foldername);
 	}
 	public void saveFolder() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		savebtn.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	public String alert() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Alert alt=driver.switchTo().alert();
 		String msg=alt.getText();
 		alt.accept();
@@ -254,7 +253,7 @@ public class ProjectsPage{
 	}
 	public boolean selFolder(String newfol) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		for(int i=0;i<folders.size();i++)
 		{
 			String folname=folders.get(i).getText();
@@ -274,18 +273,18 @@ public class ProjectsPage{
 		Thread.sleep(2000);
 		//elementWait(permission);
 		permission.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 	}
 	public void selPermissionDesig(String desig) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Select sel=new Select(selectdesignation);
 		sel.selectByVisibleText(desig);
 	}
 	public void selUser(String username) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		int subcount=permissionUser.size();
 		for(int i=0;i<subcount;i++)
 		{
@@ -301,10 +300,10 @@ public class ProjectsPage{
 	}
 	public void share() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		share.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	public void shareBtn() throws InterruptedException
 	{
@@ -315,7 +314,7 @@ public class ProjectsPage{
 	//Documents 
 	public boolean createDocument(String newfol) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	
 		for(int i=0;i<folders.size();i++)
 		{
@@ -331,14 +330,14 @@ public class ProjectsPage{
 	}
 	public void createDocumentIcon() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		createDocIcon.click();
 		Thread.sleep(3000);
 	}
 	public void fillDocument(String dtitle,String downer) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		docTitle.sendKeys(dtitle);
 		
@@ -380,7 +379,7 @@ public class ProjectsPage{
 	
 	public boolean verifyDocument(String docname) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		for(int i=0;i<documents.size();i++)
 		{
@@ -396,7 +395,7 @@ public class ProjectsPage{
 	
 	public boolean documentActions(String docname) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		for(int i=0;i<documents.size();i++)
 		{
