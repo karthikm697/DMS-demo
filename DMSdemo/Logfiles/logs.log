@@ -1,1 +1,6 @@
 [INFO ] 2023-03-23 16:30:07.678 [main] BaseTest - logged in
+[INFO ] 2023-03-23 17:01:48.143 [main] BaseTest - login success
+[INFO ] 2023-03-23 17:01:48.183 [main] BaseTest - homepage verified
+[INFO ] 2023-03-23 17:01:52.248 [main] BaseTest - logged out successfully
+[INFO ] 2023-03-23 17:02:02.324 [main] BaseTest - logged in
+[INFO ] 2023-03-23 17:02:15.904 [main] BaseTest - Project created

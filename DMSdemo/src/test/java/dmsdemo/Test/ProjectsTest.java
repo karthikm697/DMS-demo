@@ -31,8 +31,8 @@ public class ProjectsTest extends BaseTest {
 		projpg.save();
 		Assert.assertEquals(projpg.alert(),"Project created successfully.");
 		log.info("Project created");
-		Assert.assertTrue(projpg.selProject("projName"));
-		projpg.addProjRole("projRole");
+		Assert.assertTrue(projpg.selProject(projName));
+		projpg.addProjRole(projRole);
 		projpg.save();
 		Assert.assertEquals(projpg.alert(),"Role created successfully");
 		log.info("Project Role added");
