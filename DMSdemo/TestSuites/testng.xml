@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="DMS Demo">
-  <test thread-count="5" name="dms demo Test">
+
+  <test thread-count="5" name="DMS demo Login Test">
+    <classes>
+      <class name="dmsdemo.Test.LoginTest"/>
+    </classes>    
+  </test>
+
+  <test thread-count="5" name="dms demo projects Test">
     <classes>
       <class name="dmsdemo.Test.ProjectsTest"/>
     </classes>
