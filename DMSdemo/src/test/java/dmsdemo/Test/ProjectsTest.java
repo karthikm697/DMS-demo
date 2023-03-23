@@ -63,7 +63,7 @@ public class ProjectsTest extends BaseTest {
 	@DataProvider(name="data")
 	public Object[][] getData() throws Exception 
 	{
-		FileInputStream fis = new FileInputStream("C:\\Users\\DM Administrator\\Documents\\dmsdemodata.xlsx");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/dmsdemo/Resources/dmsdemodata.xlsx");
 		XSSFWorkbook wb=new XSSFWorkbook(fis);
 		XSSFSheet sheet= wb.getSheetAt(0);
 		int rowCount=sheet.getPhysicalNumberOfRows();
