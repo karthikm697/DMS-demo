@@ -4,3 +4,18 @@
 [INFO ] 2023-03-23 17:01:52.248 [main] BaseTest - logged out successfully
 [INFO ] 2023-03-23 17:02:02.324 [main] BaseTest - logged in
 [INFO ] 2023-03-23 17:02:15.904 [main] BaseTest - Project created
+[INFO ] 2023-03-23 17:10:30.950 [main] BaseTest - login success
+[INFO ] 2023-03-23 17:10:31.010 [main] BaseTest - homepage verified
+[INFO ] 2023-03-23 17:10:32.620 [main] BaseTest - logged out successfully
+[INFO ] 2023-03-23 17:10:43.406 [main] BaseTest - logged in
+[INFO ] 2023-03-23 17:10:57.016 [main] BaseTest - Project created
+[INFO ] 2023-03-23 17:11:10.562 [main] BaseTest - Project Role added
+[INFO ] 2023-03-23 17:11:33.986 [main] BaseTest - User added to project
+[INFO ] 2023-03-23 17:11:53.482 [main] BaseTest - Project folder created
+[INFO ] 2023-03-23 17:12:21.277 [main] BaseTest - Folder permission added
+[INFO ] 2023-03-24 15:42:32.465 [main] BaseTest - logged in
+[INFO ] 2023-03-24 15:42:46.157 [main] BaseTest - Project created
+[INFO ] 2023-03-24 15:42:59.972 [main] BaseTest - Project Role added
+[INFO ] 2023-03-24 15:43:23.279 [main] BaseTest - User added to project
+[INFO ] 2023-03-24 15:43:42.817 [main] BaseTest - Project folder created
+[INFO ] 2023-03-24 15:44:11.781 [main] BaseTest - Folder permission added

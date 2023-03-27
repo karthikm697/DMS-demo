@@ -58,7 +58,33 @@ public class ProjectsTest extends BaseTest {
 		Assert.assertEquals(projpg.alert(),"Permission added successfully");
 		log.info("Folder permission added");
 	}
+
 	
+	@Test(priority = 2)
+	public void addDocumentPermission(String email,String pass,String projName,String projType,String projRole,String projUser,String foldername) throws Exception
+	{
+		loginpg.login(email,pass);
+		ProjectsPage projpg=new ProjectsPage(driver);
+		projpg.projectMenu();
+		Assert.assertTrue(projpg.selProject(projName));
+		
+		Assert.assertTrue(projpg.createDocument(foldername));//sel the folder
+		projpg.createDocumentIcon();
+		projpg.fillDocument("doc1","KarthikM");
+		projpg.docVersion("v1");
+		projpg.uploadDoc("C:\\Users\\DM Administrator\\Documents\\testdatas.xls");
+		projpg.save();
+		Assert.assertEquals(projpg.alert(),"Documents saved successfully");
+		Assert.assertTrue(projpg.verifyDocument("testdatas"));
+		Assert.assertTrue(projpg.documentActions("testdatas"));
+		projpg.permission();
+		projpg.selPermissionDesig(projRole);
+		projpg.selUser(projUser);
+		projpg.save();
+		Assert.assertEquals(projpg.alert(),"Permission added successfully");
+		
+	}
+
 	
 	@DataProvider(name="data")
 	public Object[][] getData() throws Exception 
@@ -81,8 +107,9 @@ public class ProjectsTest extends BaseTest {
 		}
 		return data;	
 	}		
-
-/*	
+	
+	
+	/*	
 	
 	@Test(priority = 2)
 	public void verifyFolderPermission() throws InterruptedException
@@ -125,30 +152,7 @@ public class ProjectsTest extends BaseTest {
 		Assert.assertTrue(projpg.selFolder("sharefolder"));
 	}
 
-	@Test(priority = 5)
-	public void addDocumentPermission() throws Exception
-	{
-		loginpg.login("karthikm@datamatica.uk", "Dm@12345");
-		ProjectsPage projpg=new ProjectsPage(driver);
-		projpg.projectMenu();
-		Assert.assertTrue(projpg.selProject("proj111"));
-		
-		Assert.assertTrue(projpg.createDocument("projFolder1"));//sel the folder
-		projpg.createDocumentIcon();
-		projpg.fillDocument("doc1","KarthikM");
-		projpg.docVersion("v1");
-		projpg.uploadDoc("C:\\Users\\DM Administrator\\Documents\\testdatas.xls");
-		projpg.save();
-		Assert.assertEquals(projpg.alert(),"Documents saved successfully");
-		Assert.assertTrue(projpg.verifyDocument("testdatas"));
-		Assert.assertTrue(projpg.documentActions("testdatas"));
-		projpg.permission();
-		projpg.selPermissionDesig("QA");
-		projpg.selUser("testuser1");
-		projpg.save();
-		Assert.assertEquals(projpg.alert(),"Permission added successfully");
-		
-	}
+
 	@Test(priority = 6)
 	public void verifyDocumentPermission() throws InterruptedException
 	{

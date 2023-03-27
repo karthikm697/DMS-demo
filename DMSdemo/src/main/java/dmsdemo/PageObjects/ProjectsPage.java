@@ -278,7 +278,7 @@ public class ProjectsPage{
 	}
 	public void selPermissionDesig(String desig) throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		Select sel=new Select(selectdesignation);
 		sel.selectByVisibleText(desig);
 	}

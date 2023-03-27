@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-23T16:29:56 IST" name="Default suite" finished-at="2023-03-23T16:30:13 IST" duration-ms="16186">
+  <suite started-at="2023-03-24T15:42:23 IST" name="Default suite" finished-at="2023-03-24T15:44:11 IST" duration-ms="108959">
     <groups>
     </groups>
-    <test started-at="2023-03-23T16:29:56 IST" name="Default test" finished-at="2023-03-23T16:30:13 IST" duration-ms="16186">
+    <test started-at="2023-03-24T15:42:23 IST" name="Default test" finished-at="2023-03-24T15:44:11 IST" duration-ms="108959">
       <class name="dmsdemo.Test.ProjectsTest">
-        <test-method is-config="true" signature="LoginPage()[pri:0, instance:dmsdemo.Test.ProjectsTest@6399551e]" started-at="2023-03-23T16:29:57 IST" name="LoginPage" finished-at="2023-03-23T16:30:04 IST" duration-ms="6620" status="PASS">
+        <test-method is-config="true" signature="LoginPage()[pri:0, instance:dmsdemo.Test.ProjectsTest@3e30646a]" started-at="2023-03-24T15:42:23 IST" name="LoginPage" finished-at="2023-03-24T15:42:29 IST" duration-ms="5363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPage -->
-        <test-method signature="addProjects(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:dmsdemo.Test.ProjectsTest@6399551e]" started-at="2023-03-23T16:30:04 IST" name="addProjects" data-provider="data" finished-at="2023-03-23T16:30:12 IST" duration-ms="8563" status="PASS">
+        <test-method signature="addProjects(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:dmsdemo.Test.ProjectsTest@3e30646a]" started-at="2023-03-24T15:42:29 IST" name="addProjects" data-provider="data" finished-at="2023-03-24T15:44:11 IST" duration-ms="102615" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[proj111]]>
+                <![CDATA[proj1222]]>
               </value>
             </param>
             <param index="3">
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProjects -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:dmsdemo.Test.ProjectsTest@6399551e]" started-at="2023-03-23T16:30:12 IST" name="tearDown" finished-at="2023-03-23T16:30:13 IST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dmsdemo.Test.ProjectsTest@3e30646a]" started-at="2023-03-24T15:44:11 IST" name="tearDown" finished-at="2023-03-24T15:44:11 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
