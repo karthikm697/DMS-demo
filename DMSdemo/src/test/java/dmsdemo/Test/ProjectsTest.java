@@ -60,7 +60,7 @@ public class ProjectsTest extends BaseTest {
 	}
 
 	
-	@Test(priority = 2)
+	@Test(priority = 2,dataProvider = "data")
 	public void addDocumentPermission(String email,String pass,String projName,String projType,String projRole,String projUser,String foldername) throws Exception
 	{
 		loginpg.login(email,pass);
