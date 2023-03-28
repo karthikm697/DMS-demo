@@ -7,8 +7,7 @@
         <methods>
           <include name="LoginPage"/>
           <include name="tearDown"/>
-          <include name="addProjects"/>
-          <include name="folderShare"/>
+          <include name="addDocumentPermission" invocation-numbers="0"/>
         </methods>
       </class> <!-- dmsdemo.Test.ProjectsTest -->
     </classes>

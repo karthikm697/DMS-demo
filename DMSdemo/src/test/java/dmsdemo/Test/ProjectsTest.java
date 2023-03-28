@@ -72,11 +72,11 @@ public class ProjectsTest extends BaseTest {
 		projpg.createDocumentIcon();
 		projpg.fillDocument("doc1","KarthikM");
 		projpg.docVersion("v1");
-		projpg.uploadDoc("C:\\Users\\DM Administrator\\Documents\\testdatas.xls");
+		projpg.uploadDoc("src\\main\\resources\\sample.pdf");
 		projpg.save();
 		Assert.assertEquals(projpg.alert(),"Documents saved successfully");
-		Assert.assertTrue(projpg.verifyDocument("testdatas"));
-		Assert.assertTrue(projpg.documentActions("testdatas"));
+		Assert.assertTrue(projpg.verifyDocument("sample"));
+		Assert.assertTrue(projpg.documentActions("sample"));
 		projpg.permission();
 		projpg.selPermissionDesig(projRole);
 		projpg.selUser(projUser);

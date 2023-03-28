@@ -4,6 +4,7 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
@@ -102,7 +103,7 @@ public class ProjectsPage{
 	WebElement doctype;
 	@FindBy(xpath="//label[contains(text(),'Version')]//following-sibling::input[1]")
 	WebElement docversion;
-	@FindBy(xpath="//button[contains(text(),'Browse')]")
+	@FindBy(xpath="//button[@type='button']")
 	WebElement browsedoc;
 	@FindBy(xpath="//div[@id='primaryDocumentTree']//tr")
 	List<WebElement> documents;
@@ -355,13 +356,17 @@ public class ProjectsPage{
 	public void uploadDoc(String doclocation) throws Exception
 	{
 		Thread.sleep(3000);
+		
 		browsedoc.click();
+		String absolutepath= new File(doclocation).getAbsolutePath();
+		//browsedoc.sendKeys(absolutepath);
+		System.out.println("ABS"+absolutepath);
 		Thread.sleep(3000);
 		
 		Robot robot = new Robot();
 
 		// Press the "CTRL" and "V" keys to paste the file path into the file input field
-		StringSelection stringSelection = new StringSelection(doclocation); 
+		StringSelection stringSelection = new StringSelection(absolutepath); 
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
