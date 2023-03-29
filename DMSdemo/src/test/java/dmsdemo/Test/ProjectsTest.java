@@ -60,31 +60,31 @@ public class ProjectsTest extends BaseTest {
 	}
 
 	
-//	@Test(priority = 2,dataProvider = "data")
-//	public void addDocumentPermission(String email,String pass,String projName,String projType,String projRole,String projUser,String foldername) throws Exception
-//	{
-//		loginpg.login(email,pass);
-//		ProjectsPage projpg=new ProjectsPage(driver);
-//		projpg.projectMenu();
-//		Assert.assertTrue(projpg.selProject(projName));
-//		
-//		Assert.assertTrue(projpg.createDocument(foldername));//sel the folder
-//		projpg.createDocumentIcon();
-//		projpg.fillDocument("doc1","KarthikM");
-//		projpg.docVersion("v1");
-//		projpg.uploadDoc("src\\main\\resources\\sample.pdf");
-//		projpg.save();
-//		log.info("document added");
-//		Assert.assertEquals(projpg.alert(),"Documents saved successfully");
-//		Assert.assertTrue(projpg.verifyDocument("sample"));
-//		Assert.assertTrue(projpg.documentActions("sample"));
-//		projpg.permission();
-//		projpg.selPermissionDesig(projRole);
-//		projpg.selUser(projUser);
-//		projpg.save();
-//		Assert.assertEquals(projpg.alert(),"Permission added successfully");
-//		
-//	}
+	@Test(priority = 2,dataProvider = "data")
+	public void addDocumentPermission(String email,String pass,String projName,String projType,String projRole,String projUser,String foldername) throws Exception
+	{
+		loginpg.login(email,pass);
+		ProjectsPage projpg=new ProjectsPage(driver);
+		projpg.projectMenu();
+		Assert.assertTrue(projpg.selProject(projName));
+		
+		Assert.assertTrue(projpg.createDocument(foldername));//sel the folder
+		projpg.createDocumentIcon();
+		projpg.fillDocument("doc1","KarthikM");
+		projpg.docVersion("v1");
+		projpg.uploadDoc("src\\main\\resources\\sample.pdf");
+		projpg.save();
+		log.info("document added");
+		Assert.assertEquals(projpg.alert(),"Documents saved successfully");
+		Assert.assertTrue(projpg.verifyDocument("sample"));
+		Assert.assertTrue(projpg.documentActions("sample"));
+		projpg.permission();
+		projpg.selPermissionDesig(projRole);
+		projpg.selUser(projUser);
+		projpg.save();
+		Assert.assertEquals(projpg.alert(),"Permission added successfully");
+		
+	}
 
 	
 	@DataProvider(name="data")
