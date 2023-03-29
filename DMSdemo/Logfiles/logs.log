@@ -31,3 +31,7 @@
 [INFO ] 2023-03-28 10:32:54.110 [main] BaseTest - User added to project
 [INFO ] 2023-03-28 10:33:13.688 [main] BaseTest - Project folder created
 [INFO ] 2023-03-28 10:33:42.574 [main] BaseTest - Folder permission added
+[INFO ] 2023-03-28 11:27:48.428 [main] BaseTest - document added
+[INFO ] 2023-03-28 11:32:13.546 [main] BaseTest - login success
+[INFO ] 2023-03-28 11:32:13.594 [main] BaseTest - homepage verified
+[INFO ] 2023-03-28 11:32:16.565 [main] BaseTest - logged out successfully

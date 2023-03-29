@@ -360,7 +360,7 @@ public class ProjectsPage{
 		browsedoc.click();
 		String absolutepath= new File(doclocation).getAbsolutePath();
 		//browsedoc.sendKeys(absolutepath);
-		System.out.println("ABS"+absolutepath);
+		System.out.println("ABS "+absolutepath);
 		Thread.sleep(3000);
 		
 		Robot robot = new Robot();

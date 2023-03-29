@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -37,16 +38,19 @@ public class BaseTest {
 		///String browserName = prop.getProperty("browser");
 
 		if(browserName.contains("chrome"))
-		{
-			ChromeOptions options= new ChromeOptions();
-			if(browserName.contains("headless"))
-			{
-				options.addArguments("headless");
-			}
-			options.addArguments("--remote-allow-origins=*");
-			driver=new ChromeDriver(options);
-			//driver.manage().window().setSize(new Dimension(1440,900));
+		{	
+			driver=new ChromeDriver();
 		}
+		else if(browserName.contains("headless"))
+			{
+			    ChromeOptions options= new ChromeOptions();
+				options.addArguments("headless");
+				driver=new ChromeDriver(options);
+			}
+			//options.addArguments("--remote-allow-origins=*");
+			
+			//driver.manage().window().setSize(new Dimension(1440,900));
+		
 		else if(browserName.contains("firefox"))
 		{
 			driver=new FirefoxDriver();
